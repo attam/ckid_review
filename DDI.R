@@ -1,6 +1,6 @@
 # function that determines a drug dose index (DDI)
 # where DDI is a measure of how high a dose is based on the maximum advised dose for a given drug
-# the formula is;
+# the formula is:
 # DDI = dose/max dose
 # max dose is the minimum of (maximum dose in mg/kg, max dose in mg)
 # inputs:
@@ -14,7 +14,7 @@
 
 # read the reference data on drug max doses
 # modification: 
-# - due to fact that drug dose-response curve flattens out after reaching at some point,
+# - due to fact that drug dose-response curve theoretically flattens out after reaching at some point,
 #   maximum DDI will be 1 (ie, any calculation of DDI>1 will be given value of 1)
 dose_ref <- read_csv("dosing_ref_antiHTN.csv")
 
